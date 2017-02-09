@@ -1,35 +1,10 @@
-// import dva from 'dva';
-// import './index.css';
-// import createLogger from 'redux-logger';
-// import FastClick from 'fastclick';
-// FastClick.attach(document.body);
-//
-// // 1. Initialize
-// const app = dva({
-// 	onAction: createLogger(),
-// 	onError(e) {
-// 		console.log(e.message);
-// 	}
-// });
-//
-// // 2. Plugins
-// // app.use({});
-//
-// // 3. Model
-// app.model(require('./models/TabBar'));
-//
-// // 4. Router
-// app.router(require('./router'));
-//
-// // 5. Start
-// app.start('#root');
-
-
 import dva from 'dva';
+import './index.css';
 import createLogger from 'redux-logger';
-import model from './models/example';
-import App from './components/Example';
+import FastClick from 'fastclick';
+FastClick.attach(document.body);
 
+// 1. Initialize
 const app = dva({
 	onAction: createLogger(),
 	onError(e) {
@@ -37,8 +12,14 @@ const app = dva({
 	}
 });
 
-app.model(model);
+// 2. Plugins
+// app.use({});
 
-app.router(() => <App />);
+// 3. Model
+// app.model(require('./models/TabBar'));
 
+// 4. Router
+app.router(require('./router'));
+
+// 5. Start
 app.start('#root');
