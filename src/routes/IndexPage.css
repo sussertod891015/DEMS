@@ -1,0 +1,28 @@
+.normal {
+  font-family: Georgia, sans-serif;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.title {
+  font-size: .5rem;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+.welcome {
+  height: 1rem;
+  background: url(../assets/yay.jpg) no-repeat center 0;
+  background-size: auto 1rem;
+}
+
+.list {
+  font-size: .2rem;
+  margin-top: .8rem;
+  list-style: none;
+  line-height: .5rem;
+}
+
+.list code {
+  background: #f7f7f7;
+}
